@@ -1,0 +1,8 @@
+### 📦 Requirements.txt (basic)
+
+```txt
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
