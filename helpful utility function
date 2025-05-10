@@ -1,0 +1,10 @@
+import pandas as pd
+
+def normalize_feature_importance(importances: pd.Series) -> pd.Series:
+    """
+    Normalize feature importance scores to a 0–100 scale for easier comparison and visualization.
+    """
+    min_val = importances.min()
+    max_val = importances.max()
+    normalized = (importances - min_val) / (max_val - min_val) * 100
+    return normalized.round(2)
